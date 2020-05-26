@@ -18,7 +18,9 @@
                             <option selected>Choose...</option>
                             <option value="MotherBoard">MotherBoard</option>
                             <option value="RAM">RAM</option>
+                            <option value="Processor">Processor</option>
                             <option value="VideoCard">Video Card</option>
+                            <option value="Peripherals">Peripheral</option>
                         </select>
                         </div>
                         
