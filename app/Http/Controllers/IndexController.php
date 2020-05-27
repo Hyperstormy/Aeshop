@@ -9,7 +9,7 @@ class IndexController extends Controller
 {
    public function index(){
   
-      $item = Item::all();
+      $item = Item::paginate(1);
 
       $data['item'] = $item;
 
@@ -21,7 +21,7 @@ class IndexController extends Controller
 
       $sort = request('item_type');
 
-      $data['item'] = Item::sort($sort)->get();
+      $data['item'] = Item::sort($sort);
 
       return view('welcome',$data);
 

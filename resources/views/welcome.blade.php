@@ -107,10 +107,15 @@
                                 </tr>
 
                                 @endforeach  
+
                             </table>
+
                         </div>
-                    </div>
-                </div>
+                    </div>   
+                    <div class="d-flex justify-content-center align-items-center" >
+                            {{ $item->links() }}
+                        </div>        
+                </div>     
             </div>
         </div>
     </div>
