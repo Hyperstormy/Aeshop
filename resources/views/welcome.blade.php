@@ -70,6 +70,28 @@
                 <div class="card-header">AeShop | Price List</div>
                     <div class="card-body">          
                         <div class="container">
+                            <h3>Sort Items</h3>
+                        <form action="/sort" method="POST">
+                        @csrf
+                            <div class="form-row">
+                                    <div class="col-4">
+                                        <select class="custom-select" id="item_type" name="item_type">
+                                            <option selected>Choose...</option>
+                                            <option value="MotherBoard">MotherBoard</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Processor">Processor</option>
+                                            <option value="VideoCard">Video Card</option>
+                                            <option value="Peripherals">Peripheral</option>
+                                        </select> 
+                                    </div> 
+
+                                    <div class="col-2">
+                                        <button type="submit" class="btn btn-primary">Sort</button>
+                                    </div>
+                            </div>           
+                        </form>
+
+                        <br>
                             <table class="table text-center">
                                 <tr>
                                     <th>Item Type</th>

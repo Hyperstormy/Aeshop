@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index');
+Route::post('/sort', 'IndexController@sort');
 
 Auth::routes();
 
