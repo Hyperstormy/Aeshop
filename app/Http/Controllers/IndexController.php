@@ -9,7 +9,7 @@ class IndexController extends Controller
 {
    public function index(){
   
-      $item = Item::paginate(1);
+      $item = Item::sortable()->paginate(5);
 
       $data['item'] = $item;
 

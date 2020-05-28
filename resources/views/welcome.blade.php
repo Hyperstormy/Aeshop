@@ -94,9 +94,9 @@
                         <br>
                             <table class="table text-center">
                                 <tr>
-                                    <th>Item Type</th>
-                                    <th>Item Name</th>
-                                    <th>Item Price</th>
+                                    <th>@sortablelink('item_type', 'Item Type')</th>
+                                    <th>@sortablelink('item_name', 'Item Name')</th>
+                                    <th>@sortablelink('item_price', 'Item Price')</th>
                                 </tr>
                                 
                                 <tr>
@@ -113,7 +113,7 @@
                         </div>
                     </div>   
                     <div class="d-flex justify-content-center align-items-center" >
-                            {{ $item->links() }}
+
                         </div>        
                 </div>     
             </div>
